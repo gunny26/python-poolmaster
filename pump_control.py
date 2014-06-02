@@ -16,3 +16,5 @@ GPIO.setup(R_CH1, GPIO.OUT)
 GPIO.setup(R_CH2, GPIO.OUT)
 
 GPIO.output(R_CH1, int(sys.argv[1]))
+# don't cleanup, so port stays in desired level after exit
+#GPIO.cleanup()
